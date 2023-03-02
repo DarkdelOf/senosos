@@ -127,6 +127,14 @@ while fim == False:
                 catetadjacente = round(math.sqrt((hipotenusa**2)-(catetoposto**2)), 4)
                 r = 0
                 choose = 0
+
+        if hipotenusa != 0:
+            r = 0
+            choose = 0
+
+        else:
+            if catetoposto and catetadjacente != 0:
+                hipotenusa = round(math.sqrt((catetadjacente**2)+(catetoposto**2)), 4)
         
         if sen != 0:
             r = 0
